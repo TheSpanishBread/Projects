@@ -1,53 +1,171 @@
 <!DOCTYPE html>
+
 <head>
     <html lang="en">
     <title>The Spanish Bread</title>
     <link rel="icon" type="image/png" href="IMAGES/profilepicture.jpeg">
+    <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Modern+Antiqua">
+
+<style>
+    body{
+     background:#f77c7c; 
+    }
+    #sitebanner{
+        text-align: center;
+        margin:-50px 300px -20px 300px;
+        padding:1px 0px 1px 0px;
+        border-radius:10px; 
+        color:wheat;
+        font-family:"Modern Antiqua";
+        font-size: 50pt;
+        text-decoration: underline;
+    }
+    .initial{
+        font-size:80pt;
+    }
+    
+    .mainbody{
+        background:white;
+        border-radius:10px;
+        margin:0px 320px 0px 320px;
+        padding:25px;
+        border-radius:10px;
+        border-width:5px 5px 10px 5px;
+        border-style: solid;
+        border-color:black;
+    }
+    #header{
+        background:hsl(54, 69%, 75%);
+        position:relative;
+        display: block;
+        margin:-50px -50px 50px -50px;
+        padding: 5px 0px 20px 0px;
+        border-radius:10px;
+        border-width: 3px;
+        border-bottom-width:10px;
+        border-style: solid;
+        border-color:black;
+        overflow: hidden;
+    }
+    #navigation{
+        
+        margin:15px 0px 0px 30px;
+        float:left;
+        font-family: "Modern Antiqua";
+        font-size: 15pt;
+        text-align:center;
+    }
+    .navchoice{
+        display: inline;
+        margin:0px 20px 0 20px;
+        background:wheat;
+        padding: 6px 10px 6px 10px;
+        border-radius:5px;
+        border-color: #FFC300 ;
+        border-width:0px 2px 2px 0px;
+        border-style:solid;
+    }
+    #searchbody{
+        float:right;
+        margin:15px 50px 0 0;
+    }
+    #searchfield{
+        display: inline;
+        border-radius:10px;
+        padding:5px;
+    }
+    #searchbutton{
+        display: inline;
+        width:15px;
+        margin:auto;
+    }
+    .rowseparator{
+        margin:50px 20px 0px 20px;
+    }
+    .column{
+        display: inline-block;
+        margin:0px 50px 0px 50px;
+    }
+    .columngallery{
+        margin:0px 20px 0px 20px;
+        width: 12%;
+    }
+    .section-title{
+        background:hsl(54, 69%, 75%);
+        font-family: "Modern Antiqua";
+        text-align: center;
+        padding:10px;
+        border-radius: 5px;
+        border-width:2px 2px 6px 2px;
+        border-color:black;
+        border-style: solid;
+        margin:0 -25px 0px -25px;
+    }
+    .section-text-format{
+        text-align:justify;
+        font-size: 13pt;
+    }
+    .profilepicture{
+        border-radius:50%;
+        width:300px;
+    }
+    .center{
+        position:relative;
+        margin:auto;
+        text-align: center;
+    }
+
+</style>
 </head>
 <header>
-    <br>
-    <div id="top">
-        <h1>Navigation:</h1>
-        <a href="#top">Home</a> &nbsp;
-        <a href="#aboutme">About Me</a>&nbsp;
-        <a href="#rate">Poll</a>&nbsp;
-    </div>
-    <div align="right">
-        <form id="search">
-        <input type="text" placeholder="Search..." required>
-        <button type="submit"><img src="IMAGES/searchicon.png" alt="search_icon" width="15px" height="15px"></button>
-        </form>
-    </div>
+    <div id="sitebanner">
+        <p><span class="initial">R</span>usty <span class="initial">P</span>astry</p>
+    </div>    
 </header>
 <body>
-    <br><br><br><br>
-    <div class="intro">
-        <div class="profilepicture">
-            <img src="IMAGES/profilepicture.jpeg"><br><br>
-        </div>
-        <div class="info">
-        <p><strong>NAME</strong>: Spanish Bread
-        <br><br>
-        <strong>AGE</strong>: 22
-        <br><br>
-        <strong>GENDER</strong>: M
-        <br><br>
-        <strong>DOB</strong>: 11/01/1997
-        <br><br>
-        <strong>Address</strong>: 
-        <br><br>
-        <strong>CONTACTS</strong>: <a href=#>someemail@gmail.com</a><br>0999-020-0202
-        </p>
-        </div>
-        <div class="sociallinks">
-            <a href="#"><img src="IMAGES/facebook.png" width=45px alt="facebook"></a> &nbsp
-            <a href="#"><img src="IMAGES/icons8-twitter-48.png" width=45px alt="twitter"></a>
-        </div>
+    <div class="mainbody">
+        <div id="header">
+            <div id="navigation">
+                <a class="navchoice" href="#header">Home</a>
+                <a class="navchoice" href="#aboutme">About Me</a>
+                <a class="navchoice" href="#rate">Rate this page</a>
+            </div>
+            <div id="searchbody">
+                <form id="searchform">
+                <input type="text" id="searchfield" placeholder="Search..." required>
+                <button type="submit"><img id="searchbutton" src="IMAGES/searchicon.png" alt="search_icon"></button>
+            </form>
+            </div>
     </div>
-    <br><br><br>
-    <div id="aboutme">
-        <h1><u>About me</u></h1>
-        <p align="justify">
+    <div class="content">
+    <div class="center">
+        <div class="column">
+            <img class="profilepicture" src="IMAGES/profilepicture.jpeg"><br><br>
+        </div>
+        <div class="info column" align="justify">
+            <p><strong>NAME</strong>: Spanish Bread
+            <br><br>
+            <strong>AGE</strong>: 22
+            <br><br>
+            <strong>GENDER</strong>: M
+            <br><br>
+            <strong>DOB</strong>: 11/01/1997
+            <br><br>
+            <strong>Address</strong>: 
+            <br><br>
+            <strong>CONTACTS</strong>: <a href=#>someemail@gmail.com</a><br>0999-020-0202
+            </p>
+            <div class="sociallinks">
+                <a href="#"><img src="IMAGES/facebook.png" width=45px alt="facebook"></a>
+                <a href="#"><img src="IMAGES/icons8-twitter-48.png" width=45px alt="twitter"></a>
+            </div>
+        </div>
+        
+    </div>
+    <div id="aboutme" class="rowseparator">
+        <h1 class="section-title"><u>About me</u></h1>
+        <p class="section-text-format">
             Greetings! I am <strong>The_Spanish_Bread</strong>. I am a student of Saint Louis University with the major of Bachelor of Science in Electrical Engineering.
              I am currently on my 5th and the last year of my term. My time in the University let me earn a great deal of knowledge and values, especially 
              in dealing with my own share of life struggles and mental health. And of course, I have my own great deal and knowledge with Electrical Engineering
@@ -56,21 +174,20 @@
             While I have my own share of knowledge relevant to my
             degree, I also aspire to be a Web Developer with knowledge on both Front-end and Back-end development. I have chosen <strong>"The Odin Project"</strong> for its beginner friendly platform
             and linear type progression.
-            As of now, I'm learning basic git commands, linux commands
-            and basic HTML.As soon as I have  considered I am confident enough with HTML and building the basic web-page structures, I will move on to improving its design, or
-            applying CSS. Until I have reached my goal of being a fully-stacked developer. But my journey will not stop there of course. Because there will always be room for 
+            As of now, I'm learning the basics of CSS. As soon as I have considered that I am confident enough with it, I will study further the following lessons base in <strong> The Odin Project</strong> web development course. 
+            Until I have reached my goal of being a fully-stacked developer. But my journey will not stop. For there will always be room for 
             improvement throughout.
             <br><br>
             At the same time, I also have plans to start drawing pixel-art, or at least improve at it. Here are some of my illustrations, its not much since I am still new and have
             no prior artistic art skill at all.
             <br><br>
-            <div id="showcase">
-                <img src="IMAGES/Day1a.png" alt="ball" width="100px"> &nbsp;&nbsp;&nbsp;&nbsp;
-                <img src="IMAGES/Day2a.png" alt="cat1" width="100px">&nbsp;&nbsp;&nbsp;&nbsp;
-                <img src="IMAGES/Day3.png" alt="cat2" width="100px">&nbsp;&nbsp;&nbsp;&nbsp;
-                <img src="IMAGES/Day4.png" alt="me" width="100px">&nbsp;&nbsp;&nbsp;&nbsp;
-                <img src="IMAGES/Day7.png" alt="landscape" width="100px">&nbsp;&nbsp;&nbsp;&nbsp;
-                <img src="IMAGES/pain.png" alt="heart" width="100px">&nbsp;&nbsp;&nbsp;&nbsp;
+            <div id="showcase" class="center">
+                <img class="columngallery" src="IMAGES/Day1a.png" alt="ball" width="100px"> 
+                <img class="columngallery" src="IMAGES/Day2a.png" alt="cat1" width="100px">
+                <img class="columngallery" src="IMAGES/Day3.png" alt="cat2" width="100px">
+                <img class="columngallery" src="IMAGES/Day4.png" alt="me" width="100px">
+                <img class="columngallery" src="IMAGES/Day7.png" alt="landscape" width="100px">
+                <img class="columngallery" src="IMAGES/pain.png" alt="heart" width="100px">
             </div>
             <br><br>
             Why the sudden rush of learning different profession or skills you may ask? Well, growing up I really never special talent or so, and spent a great deal of time with video-games
@@ -78,20 +195,19 @@
             Development, while squeezing that prior HTML prior knowledge from high-school and very small MATLAB knowledge from university, for its flexibilty to yield designs,functions and 
             animations capability that users are able to view straight from their browser, quite similar to what its like whenever I create Powerpoint presentations.
             <br><br>
-            That's about it! Thank you for checking out my first Web Development project! 
+            <span align="center">That's about it! Thank you for checking out my second Web Development project!</span>
         </p>
     </div>
 
 </body>
-<br><br>
 <footer>
-    <p>Rate this Webpage:</p>
-    <br>
-    <div id="rate">
-        <form action="#">
-            <label for="pollBad">
+    <div align="center" class="rowseparator">
+        <h1 class="section-title">Rate this Webpage:</h1>
+        <div id="rate" class="rowseparator">
+            <form action="#">
+             <label for="pollBad">
                 <input id="bad" required type="radio" name="poll">Bad
-            </label>
+             </label>
             <label for="pollOk">
                 <input id="ok" type="radio" name="poll">Ok
             </label>
@@ -103,9 +219,10 @@
             </label>
             <br><br><button type="submit">Submit!</button>
             </form>
-    </div>
-    <div id="signature">
+        </div>
+         <div id="signature" class="center">
         <img src="IMAGES/signature.png" alt="signature" width="500px">
+        </div>
     </div>
 </footer>
 </html>
