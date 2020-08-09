@@ -1,3 +1,3 @@
-This project is made after taking up freecodecamp's "Basic HTML and HTML 5" lesson. This is made to test what I have learned throughout the lesson. 
+This project is made after taking up freecodecamp's "Basic HTML and HTML 5" lesson. This is made to test what I have learned throughout the course. 
 
 -Thank you! :D
