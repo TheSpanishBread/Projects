@@ -9,7 +9,9 @@
 
 <style>
     body{
-     background:#f77c7c; 
+     background:url(IMAGES/1.jpg);
+     background-repeat: no-repeat;
+     background-attachment: fixed;
     }
     #sitebanner{
         text-align: center;
@@ -26,7 +28,7 @@
     }
     
     .mainbody{
-        background:white;
+        background:rgba(255, 255, 255, 0.9);
         border-radius:10px;
         margin:0px 320px 0px 320px;
         padding:25px;
@@ -85,11 +87,15 @@
     }
     .column{
         display: inline-block;
-        margin:0px 50px 0px 50px;
+        margin:0 50px 0 50px;
     }
     .columngallery{
         margin:0px 20px 0px 20px;
-        width: 12%;
+        width: 15%;
+    }
+    .showcase{
+        margin: auto;
+        width: 100%;
     }
     .section-title{
         background:hsl(54, 69%, 75%);
@@ -108,11 +114,11 @@
     }
     .profilepicture{
         border-radius:50%;
-        width:300px;
+        width: 300px;
     }
     .center{
-        position:relative;
         margin:auto;
+        width:auto;
         text-align: center;
     }
 
@@ -143,7 +149,7 @@
         <div class="column">
             <img class="profilepicture" src="IMAGES/profilepicture.jpeg"><br><br>
         </div>
-        <div class="info column" align="justify">
+        <div class="info column">
             <p><strong>NAME</strong>: Spanish Bread
             <br><br>
             <strong>AGE</strong>: 22
@@ -160,8 +166,7 @@
                 <a href="#"><img src="IMAGES/facebook.png" width=45px alt="facebook"></a>
                 <a href="#"><img src="IMAGES/icons8-twitter-48.png" width=45px alt="twitter"></a>
             </div>
-        </div>
-        
+        </div> 
     </div>
     <div id="aboutme" class="rowseparator">
         <h1 class="section-title"><u>About me</u></h1>
@@ -182,12 +187,13 @@
             no prior artistic art skill at all.
             <br><br>
             <div id="showcase" class="center">
-                <img class="columngallery" src="IMAGES/Day1a.png" alt="ball" width="100px"> 
-                <img class="columngallery" src="IMAGES/Day2a.png" alt="cat1" width="100px">
-                <img class="columngallery" src="IMAGES/Day3.png" alt="cat2" width="100px">
-                <img class="columngallery" src="IMAGES/Day4.png" alt="me" width="100px">
-                <img class="columngallery" src="IMAGES/Day7.png" alt="landscape" width="100px">
-                <img class="columngallery" src="IMAGES/pain.png" alt="heart" width="100px">
+                <img class="columngallery" src="IMAGES/Day1a.png" alt="ball"> 
+                <img class="columngallery" src="IMAGES/Day2a.png" alt="cat1">
+                <img class="columngallery" src="IMAGES/Day3.png" alt="cat2">
+                <img class="columngallery" src="IMAGES/Day4.png" alt="me">
+                <img class="columngallery" src="IMAGES/Day7.png" alt="landscape">
+                <img class="columngallery" src="IMAGES/pain.png" alt="heart">
+                <img class="columngallery" src="IMAGES/1.jpg" alt="landscape2">
             </div>
             <br><br>
             Why the sudden rush of learning different profession or skills you may ask? Well, growing up I really never special talent or so, and spent a great deal of time with video-games
@@ -195,15 +201,15 @@
             Development, while squeezing that prior HTML prior knowledge from high-school and very small MATLAB knowledge from university, for its flexibilty to yield designs,functions and 
             animations capability that users are able to view straight from their browser, quite similar to what its like whenever I create Powerpoint presentations.
             <br><br>
-            <span align="center">That's about it! Thank you for checking out my second Web Development project!</span>
+            That's about it! Thank you for checking out my second Web Development project!
         </p>
     </div>
 
 </body>
 <footer>
-    <div align="center" class="rowseparator">
+    <div class="rowseparator">
         <h1 class="section-title">Rate this Webpage:</h1>
-        <div id="rate" class="rowseparator">
+        <div id="rate" class="rowseparator center">
             <form action="#">
              <label for="pollBad">
                 <input id="bad" required type="radio" name="poll">Bad
