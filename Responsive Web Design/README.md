@@ -1,0 +1,1 @@
+I created this project to test what I have learned in freecodecamp's "Responsive Web Design" with respect to The Odin Project's Web development Course 101. 
