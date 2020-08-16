@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;1,900&display=swap" rel="stylesheet">
+    <title>Yourshop!</title>
+    <style>
+        body{
+            margin:auto;
+            background: white;
+        }
+        .nav{
+            margin:50px 300px 10px 300px ;
+            padding:5px;
+            background:rgb(231, 231, 231);
+            overflow: hidden;
+            border-radius: 5px;
+        }
+        .banner{
+            float: left;
+            margin:0px 10px 0px 20px ;
+            font-family:"Montserrat";
+            font-size: 13pt;
+        }
+        span.S{
+            font-family:"Montserrat";
+            font-size: 25pt;
+            color:rgb(253, 90, 90);
+        }
+        span.Y{
+            font-family:"Montserrat";
+            font-size: 25pt;
+            color:rgb(100, 100, 255);
+        }
+        .search{
+            float: inline-start;
+            margin:20px 20px 20px 100px;
+        }
+        .textfield{
+            width:350px;
+            height:25px;
+            border-radius:25px;
+        }
+        .sign-in-sign-up{
+            float:right;
+            margin-right:30px;
+            font-weight: bold;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .inline-block{
+            display: inline-block;
+            margin:10px;
+        }
+        hr{
+            margin:30px 275px 30px 275px ;
+            color:black;
+            opacity: 0.5;
+        }
+        .mainbox{
+            margin:0px 350px 10px 350px ;
+            padding:auto;
+            overflow:hidden;
+        }
+        .news{
+            background:white;
+            padding:220px 380px 280px 450px ;
+            float:right;
+            margin:20px 40px 20px 40px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 4px;
+        }
+        .left{
+            position:absolute;
+            left:0px;
+            top: 0px;
+            background:gray;
+            padding:220px 30px 280px 30px ;
+            opacity: 0.8;
+            font-size:40px;
+            font-family: Montserrat;
+            color:whitesmoke;
+        }
+        .right{
+            position:absolute;
+            right:0px;
+            top: 0px;
+            background:gray;
+            padding:220px 30px 280px 30px ;
+            font-size:40px;
+            font-family: Montserrat;
+            color:whitesmoke;
+            opacity: 0.8;
+        }
+        ul{
+            list-style-type: none;
+        }
+        ul li{
+            color:white;
+            margin:15px 5px 15px 5px ;
+        }
+        a {
+            text-decoration: none;
+            color:black;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        .categories{
+            float:left;
+            margin-left:5px;
+            margin-top: 20px;
+            color:black;
+            font-family: Montserrat;
+            background:rgb(231, 231, 231);
+            padding: 0px 20px 50px 20px;
+            border-radius: 5px;
+        }
+        .cat{
+            font-size: 25px;
+            text-decoration: underline;
+        }
+        .news{
+            float:right;
+            border-style: solid;
+            border-width: 1px;
+            border-color: black;
+        }
+        .section{
+            margin:10px 300px 10px 300px ;
+        }
+        h1{
+            text-align: center;
+        }
+        .product-show-case{
+            margin:0px 0px 10px 0px ;
+            padding:auto;
+            }
+        .sampleproduct{
+            display: inline-block;
+            background:white;
+            margin: 20px 26px 20px 26px;
+            padding:120px 100px 120px 100px;
+            -webkit-box-shadow: 0px 2px 5px 3px rgba(0,0,0,0.49);
+            -moz-box-shadow: 0px 2px 5px 3px rgba(0,0,0,0.49);
+            box-shadow: 0px 2px 5px 3px rgba(0,0,0,0.49);;
+            
+        }
+        .sampleproduct:hover{
+            animation-name: float;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes float{
+            0%{
+                transform: skew(0deg,0deg);
+            }
+            100%{
+                transform: skew(-5deg,5deg);
+            }
+        }
+        footer{
+            position: relative;
+            bottom: 0px;
+            margin: auto;
+            width:100%;
+            padding-top: 150px;
+            background-color: gray;
+        }
+    </style>
+</head>
+<header>
+<div class="nav">
+    <div class="banner">
+        <p><span class="Y">Y</span>our<span class="S">S</span>hop.com</p>
+    </div>
+    <div class="search">
+        <form class="searchform">
+            <input class="textfield" type="text" placeholder="Search for your product..">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="sign-in-sign-up">
+        <div class="inline-block">
+            <p>Sign In</p>
+        </div>
+        <div class="inline-block">
+            <p>Sign Up</p>
+        </div>
+    </div>
+</div>
+</header>
+<body>
+    <div class="mainbox">
+        <div class="categories">
+            <p class="cat">Categories</p>
+            <ul class="categ">
+                <li><a href="#>">Components</a></li>
+                <li><a href="#>">Pheripherals</a></li>
+                <li><a href="#>">Accessories</a></li>
+                <li><a href="#>">Software</a></li>
+                <li><a href="#>">Multimedia Products</a></li>
+                <li><a href="#>">Networking</a></li>
+            </ul>
+        </div>
+        <div class="news">
+            <div class="left">
+                &lt;
+            </div>
+            <div class="right">
+                &gt;
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="newarrivals section">
+        <h1>New Arrivals</h1>
+        <div class="product-show-case">
+            <div class="sampleproduct"></div>
+            <div class="sampleproduct"></div>
+            <div class="sampleproduct"></div>
+            <div class="sampleproduct"></div>
+            <div class="sampleproduct"></div>
+        </div>
+    </div>
+    <hr>
+    <div class="popularitems section">
+        <h1>Popular Items</h1>
+        <div class="product-show-case">
+            <div class="sampleproduct"></div>
+            <div class="sampleproduct"></div>
+            <div class="sampleproduct"></div>
+            <div class="sampleproduct"></div>
+            <div class="sampleproduct"></div>
+        </div>
+    </div>
+    <hr>
+    <div class="discover section">
+        <h1>Discover New Items</h1>
+        <div class="product-show-case">
+            <div class="sampleproduct"></div>
+            <div class="sampleproduct"></div>
+            <div class="sampleproduct"></div>
+            <div class="sampleproduct"></div>
+            <div class="sampleproduct"></div>
+        </div>
+    </div>
+    <hr>
+    <div class="coupons">
+        <div class="samplecoupon"></div>
+        <div class="samplecoupon"></div>
+        <div class="samplecoupon"></div>
+    </div>
+</body>
+<footer>
+    <div class="bannerfooter">
+
+    </div>
+    <div class="company">
+
+    </div>
+    <div class="howtobuy">
+
+    </div>
+    <div class="contact">
+
+    </div>
+</footer>
+
+
+
+
+
+
+
+</html>
