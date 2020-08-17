@@ -34,12 +34,12 @@ background-image: url("https://www.transparenttextures.com/patterns/45-degree-fa
         }
         .search{
             float: inline-start;
-            margin:20px 20px 20px 100px;
+            margin:20px 20px 0px 30px;
         }
         .textfield{
-            width:350px;
-            height:25px;
-            border-radius:25px;
+            width:650px;
+            height:38px;
+            border-radius:10px;
         }
         .sign-in-sign-up{
             float:right;
@@ -123,6 +123,7 @@ background-image: url("https://www.transparenttextures.com/patterns/45-degree-fa
         }
         .section{
             margin:10px 300px 10px 300px ;
+            font-family: Montserrat;
         }
         h1{
             text-align: center;
@@ -134,26 +135,38 @@ background-image: url("https://www.transparenttextures.com/patterns/45-degree-fa
             }
         .sampleproduct{
             display: inline-block;
-            background:url(https://hips.hearstapps.com/ghk.h-cdn.co/assets/cm/15/12/480x552/5508e9bb6b9a7-0312-water-bottle-xl.jpg?resize=480:*);
-            background-size: cover;
             margin: 20px 26px 20px 26px;
-            padding:120px 100px 120px 100px;
+            width:200px;
+            height: 240px;
             -webkit-box-shadow: 0px 2px 5px 3px rgba(0,0,0,0.49);
             -moz-box-shadow: 0px 2px 5px 3px rgba(0,0,0,0.49);
-            box-shadow: 0px 2px 5px 3px rgba(0,0,0,0.49);;
-            
+            box-shadow: 0px 2px 5px 3px rgba(0,0,0,0.49);
+            position: relative;
         }
-        .sampleproduct:hover{
+        .product:hover{
             animation-name: float;
             animation-duration: 1s;
             animation-fill-mode: forwards;
         }
+        .product{
+            background:url(https://hips.hearstapps.com/ghk.h-cdn.co/assets/cm/15/12/480x552/5508e9bb6b9a7-0312-water-bottle-xl.jpg?resize=480:*);
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+        }
+        .pricetag{
+            padding:10px;
+            text-align: center;
+            font-family:Arial;
+            color:green;
+            font-weight:30pt;
+        }
         @keyframes float{
             0%{
-                transform: skew(0deg,0deg);
+                transform: scale(1);
             }
             100%{
-                transform: skew(-5deg,5deg);
+                transform: scale(1.2);
             }
         }
         .news1{
@@ -171,29 +184,35 @@ background-image: url("https://www.transparenttextures.com/patterns/45-degree-fa
             width:100%;
            height:200px;
            padding-top: 10px;
-            background-color: gray;
+           background-color: #adabab;
+            background-image: url("https://www.transparenttextures.com/patterns/absurdity.png");
             overflow: hidden;
+            font-family: Montserrat;
+
+        }
+        .footercontainer{
+            margin:0px 250px 0px 250px;
         }
         .bannerfooter{
-            margin:auto;
-            background: orange;
-            float:left;
-            margin:20px 50px 20px 200px ;
+            display: inline-block;
+            margin:10px 30px 10px 30px ;
+            text-align: justify;
         }
         .company{
-            float:inline-start;
-            margin:20px 50px 20px 50px ;
-            background: orange;
+            display: inline-block;
+            margin:10px 30px 10px 30px ;
+            list-style-type: none;
         }
         .howtobuy{
-            float:inline-start;
-            margin:20px 50px 20px 50px ;
-            background: orange;
+            display: inline-block;
+            margin:10px 30px 10px 30px ;
         }
         .contact{
-            float:inline-start;
-            margin:20px 50px 20px 50px ;
-            background: orange;
+            display: inline-block;
+            margin:10px 30px 10px 30px ;
+        }
+        .footerheading{
+            font-size: 18pt;
         }
     </style>
 </head>
@@ -204,7 +223,7 @@ background-image: url("https://www.transparenttextures.com/patterns/45-degree-fa
     </div>
     <div class="search">
         <form class="searchform">
-            <input class="textfield" type="text" placeholder="Search for your product..">
+            <input class="textfield" required type="text" placeholder="Search for your product..">
             <button type="submit">Submit</button>
         </form>
     </div>
@@ -247,33 +266,93 @@ background-image: url("https://www.transparenttextures.com/patterns/45-degree-fa
     <div class="newarrivals section">
         <h1>New Arrivals</h1>
         <div class="product-show-case">
-            <div class="sampleproduct"></div>
-            <div class="sampleproduct"></div>
-            <div class="sampleproduct"></div>
-            <div class="sampleproduct"></div>
-            <div class="sampleproduct"></div>
+            <div class="sampleproduct">
+                <div class="product">
+                </div>
+                <p class="pricetag">P1000.00</p>
+            </div>
+            <div class="sampleproduct">
+                <div class="product">
+                </div>
+                <p class="pricetag">P1000.00</p>
+            </div>
+            <div class="sampleproduct">
+                <div class="product">
+                </div>
+                <p class="pricetag">P1000.00</p>
+            </div>
+            <div class="sampleproduct">
+                <div class="product">
+                </div>
+                <p class="pricetag">P1000.00</p>
+            </div>
+            <div class="sampleproduct">
+                <div class="product">
+                </div>
+                <p class="pricetag">P1000.00</p>
+            </div>
         </div>
     </div>
     <hr>
     <div class="popularitems section">
         <h1>Popular Items</h1>
         <div class="product-show-case">
-            <div class="sampleproduct"></div>
-            <div class="sampleproduct"></div>
-            <div class="sampleproduct"></div>
-            <div class="sampleproduct"></div>
-            <div class="sampleproduct"></div>
+            <div class="sampleproduct">
+                <div class="product">
+                </div>
+                <p class="pricetag">P1000.00</p>
+            </div>
+            <div class="sampleproduct">
+                <div class="product">
+                </div>
+                <p class="pricetag">P1000.00</p>
+            </div>
+            <div class="sampleproduct">
+                <div class="product">
+                </div>
+                <p class="pricetag">P1000.00</p>
+            </div>
+            <div class="sampleproduct">
+                <div class="product">
+                </div>
+                <p class="pricetag">P1000.00</p>
+            </div>
+            <div class="sampleproduct">
+                <div class="product">
+                </div>
+                <p class="pricetag">P1000.00</p>
+            </div>
         </div>
     </div>
     <hr>
     <div class="discover section">
         <h1>Discover New Items</h1>
         <div class="product-show-case">
-            <div class="sampleproduct"></div>
-            <div class="sampleproduct"></div>
-            <div class="sampleproduct"></div>
-            <div class="sampleproduct"></div>
-            <div class="sampleproduct"></div>
+            <div class="sampleproduct">
+                <div class="product">
+                </div>
+                <p class="pricetag">P1000.00</p>
+            </div>
+            <div class="sampleproduct">
+                <div class="product">
+                </div>
+                <p class="pricetag">P1000.00</p>
+            </div>
+            <div class="sampleproduct">
+                <div class="product">
+                </div>
+                <p class="pricetag">P1000.00</p>
+            </div>
+            <div class="sampleproduct">
+                <div class="product">
+                </div>
+                <p class="pricetag">P1000.00</p>
+            </div>
+            <div class="sampleproduct">
+                <div class="product">
+                </div>
+                <p class="pricetag">P1000.00</p>
+            </div>
         </div>
     </div>
     <hr>
@@ -284,30 +363,32 @@ background-image: url("https://www.transparenttextures.com/patterns/45-degree-fa
     </div>
 </body>
 <footer>
+    <div class="footercontainer">
     <div class="bannerfooter">
-        <p>YourShop.com</p>
+        <p class="footerheading"><span class="Y">Y</span>our<span class="S">S</span>hop.com</p>
         <p>Yourshop.com is the leading shop insert<br>text here.</p>
     </div>
     <div class="company">
-        <p>Company</p>
-        <ol>
-            <li>About Us</li>
-            <li>Terms and Conditions</li>
-        </ol>
+        <p class="footerheading">Company</p>
+        <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+        </ul>
     </div>
     <div class="howtobuy">
-        <p>How to Buy</p>
-        <ol>
-            <li>Step-by-Step Procedure</li>
-            <li>Methods of Payment</li>
-        </ol>
+        <p class="footerheading">How to Buy</p>
+        <ul>
+            <li><a href="#">Step-by-Step Procedure</a></li>
+            <li><a href="#">Methods of Payment</a></li>
+        </ul>
     </div>
     <div class="contact">
-        <p>Any Questions?</p>
-        <ol>
+        <p class="footerheading">Any Questions?</p>
+        <ul>
             <li>Call 000-000-0000</li>
             <li>Email: someemail@email.com</li>
-        </ol>
+        </ul>
+    </div>
     </div>
 </footer>
 
