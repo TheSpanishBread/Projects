@@ -1,0 +1,1 @@
+This page is create to test what I have learned in freecodecamp's Applied Accessbility based on the The Odin Project's Web Development course. This page displays proper semantic tags and neatly created forms.

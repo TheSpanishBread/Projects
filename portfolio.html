@@ -43,14 +43,14 @@
         }
         #mainmenu{
             margin:50px 300px 0 300px;
-            padding:10px;
             
         }
         .optionformat{
             display: inline-block;
             margin:0 30px 0 30px;
             background:white;
-            padding:50px 60px 50px 60px ; 
+            width:200px;
+            height:100px;
             border-width: 3px;
             border-color: rgb(250, 104, 104);
             border-style: solid;
@@ -58,10 +58,19 @@
             position: relative;
             overflow: hidden;
         }
-        .optionformat p{
+        .smalltitle{
+            width: 100%;
+            position: absolute;
+            top:25%;
+            margin:auto;
             text-align: center;
-            margin:0px -50px 0px -50px;
-
+        }
+        .bigtitle{
+            width: 100%;
+            position: absolute;
+            top:8%;
+            margin:auto;
+            text-align: center;
         }
         .optionformat:hover{
             animation-name:scale;
@@ -213,7 +222,7 @@
                     <div class="corner-bottom-right"></div>
                     <div class="corner-bottom-left"></div>
                     </div>
-                    <div>
+                    <div class="smalltitle">
                         <p>HTML BASIC</p>
                     </div>
                 </div>
@@ -226,12 +235,12 @@
                     <div class="corner-bottom-right"></div>
                     <div class="corner-bottom-left"></div>
                     </div>
-                    <div>
+                    <div class="smalltitle">
                         <p>CSS BASIC</p>
                     </div>
                 </div>
             </a>
-            <a href="#">    
+            <a href="Applied Visual Design/index.html">    
                 <div class="optionformat">
                     <div class="corner">
                     <div class="corner-top-right"></div>
@@ -239,12 +248,25 @@
                     <div class="corner-bottom-right"></div>
                     <div class="corner-bottom-left"></div>
                     </div>
-                    <div>
-                        <p style="font-size:7pt;">APPLIED<br>VISUAL DESIGN</p>
+                    <div class="bigtitle">
+                        <p>APPLIED<br>VISUAL DESIGN</p>
                     </div>
                 </div>
             </a>
-            </div>
+            <a href="Applied Accessbility/index.html">    
+                <div class="optionformat">
+                    <div class="corner">
+                    <div class="corner-top-right"></div>
+                    <div class="corner-top-left"></div>
+                    <div class="corner-bottom-right"></div>
+                    <div class="corner-bottom-left"></div>
+                    </div>
+                    <div class="bigtitle">
+                        <p>APPLIED<br>ACCESSIBLITY</p>
+                    </div>
+                </div>
+            </a>    
+        </div>
     </body>
     <footer>
         <div class="accounts">
