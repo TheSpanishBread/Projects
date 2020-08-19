@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Your Forms Sign-up</title>
+<style>
+    body{
+        margin:auto;
+    }
+    #headercontact{
+        margin:auto;
+        text-align: right;
+        width: 100%;
+        background:orange;
+        overflow: hidden;
+
+    }
+    .inline{
+        display:inline-block;
+        margin-left:10px;
+        margin-right:10px;
+    }
+    .adjustright{
+        margin-right:50px;
+        margin-top:-10px;
+        margin-bottom:-10px;
+    }
+    footer{
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        background: rebeccapurple;
+    }
+</style>
+</head>    
+<body>
+    <header>
+        <div id="headercontact">
+            <div class="adjustright">
+                <a class="inline" href="#"><img src=" " alt="facebook"></a>
+                <a class="inline" href="#"><img src=" " alt="twitter"></a>
+                <p class="inline">someemail@email.com</p>
+                <p class="inline">000-000-0000</p>
+            </div>
+        </div>
+        <div id="banner">
+            <p><span class="Y">Y</span>our<span class="F">F</span>orms</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Pricing</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Sign-up</legend>
+                <label for="first-name"></label>
+                <input type="text" id="first-name" placeholder="First Name" required>
+                
+                <label for="last-name"></label>
+                <input type="text" id="last-name" placeholder="Last Name" required>
+                
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+
+                <label for="dob"></label>
+                <input type="date" id="dob" placeholder="Date of Birth" required>
+                
+                <label for="email"></label>
+                <input type="text" id="email" placeholder="Email" required>
+
+                <label for="password"></label>
+                <input type="text" id="password" placeholder="Password" required>
+                
+                <label for="password"></label>
+                <input type="text" id="password" placeholder="Re-enter password" required>
+                
+                <figure>
+                    <img src="" alt="captchaimg">
+                    <figcaption>Enter captcha below to proceed</figcaption>
+                </figure>
+                <label for="captcha"></label>
+                <input type="text" id="captcha" placeholder="Enter Captcha" required>
+                
+                <label for="terms"><input type="checkbox" id="terms" name="terms" required> I agree to the <a href="#">Terms and Agreements</a>
+                </label>
+                
+                <label for="emailsub"><input type="checkbox" id="emailsub" name="emailsub" required> Subscribe to email newsletter.
+                </label>
+            
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <div id="banner" class="inline">
+            <p><span class="Y">Y</span>our<span class="F">F</span>orms</p>
+        </div>
+        <div id="company" class="inline">
+            <p>Company</p>
+            <ul>
+                <li><a href="#">Terms and Agreements</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </div>
+        <div id="howtobuy" class="inline">
+            <p>How-to-Buy</p>
+            <ul>
+                <li><a href="#">Step-by-Step</a></li>
+                <li><a href="#">Methods of Payment</a></li>
+            </ul>
+        </div>
+        <div id="footercontact" class="inline">
+            <p>Any Questions?</p>
+            <ul>
+                <li>Email:someemail@email.com</li>
+                <li>000-000-0000</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
