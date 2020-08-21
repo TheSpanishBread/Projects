@@ -115,9 +115,9 @@ box-shadow: 0px 13px 141px 3px rgba(0,0,0,0.44);
         margin:auto;
         font-family: Mulish;
         font-size: 12pt;
-
     }
     fieldset{
+        display: block;
         background:rgba(255, 255, 255, 0.685);
         border-radius: 10px;   
         margin: auto;
@@ -125,14 +125,14 @@ box-shadow: 0px 13px 141px 3px rgba(0,0,0,0.44);
         text-align: justify;
         border-style: none;
         width: 400px;
-        height: 500px;
+        height: 100%;
     }
     legend{
         margin: auto;
     }
     .block{
         display: block;
-        margin: 10px 10px 10px 10px ;
+        margin: 10px ;
     }
     .captchablock{
         background: rgba(240, 240, 240, 0.747);;
@@ -141,10 +141,45 @@ box-shadow: 0px 13px 141px 3px rgba(0,0,0,0.44);
     }
     footer{
         display: block;
-        margin: auto;
         margin-top: 50px;
         width: 100%;
         background: rebeccapurple;
+    }
+    #footeritems{
+        height: 100%;
+        margin:auto;
+        width:80%;
+        font-family: "Bebas Neue";
+        font-size: 18pt;
+        font-weight: bolder;
+        color:white;
+    }
+    #footeritems a{
+        text-decoration: none;
+        color:white;
+    }
+    #footeritems a:hover{
+        text-decoration: underline;
+    }
+    #footeritems ul{  
+        list-style-type: none;
+        margin-top: -20px;
+    }
+    .footerbannertitle{
+        margin: auto;
+        font-size: 40pt;
+        font-family:"Bebas Neue";
+        font-weight:bolder;
+        color: white;
+    }
+    .footerblockmargin{
+        display: inline-block;
+        margin:auto;
+        margin-left:50px;
+        margin-right: 50px;
+    }
+    .footercategtitle{
+        font-size: 25pt;
     }
 
 </style>
@@ -204,16 +239,16 @@ box-shadow: 0px 13px 141px 3px rgba(0,0,0,0.44);
             </div>
             <div class="block">
                 <label for="password">Password:&nbsp;&nbsp; </label>
-                <input type="text" id="password" placeholder="Password" required>
+                <input type="password" id="password" placeholder="Password" required>
             </div>
             <div class="block">
                 <label for="password">Re-enter Password:&nbsp;&nbsp; </label>
-                <input type="text" id="password" placeholder="Re-enter password" required>
+                <input type="password" id="password" placeholder="Re-enter password" required>
             </div>
             <div class="block captchablock">
-                <figure>
-                    <img src="" alt="captchaimg">
+                <figure class="block">
                     <figcaption>Enter captcha below to proceed</figcaption>
+                    <img class="block" width="200px" height="100px" src="https://www.researchgate.net/profile/Yang-Wai_Chow/publication/290106865/figure/fig3/AS:568357871996934@1512518484934/Example-of-PDM-character-extraction-for-the-animated-CAPTCHA-available-on-the-Sandbox.png" alt="captchaimg">                
                 </figure>
                 <label for="captcha">Enter Captcha:&nbsp;&nbsp; </label>
                 <input type="text" id="captcha" placeholder="Enter Captcha" required>
@@ -233,30 +268,34 @@ box-shadow: 0px 13px 141px 3px rgba(0,0,0,0.44);
         </form>
     </main>
     <footer>
-        <div id="footerbanner" class="inline">
-            <p><span class="Y">Y</span>our<span class="F">F</span>orms</p>
+        <div id="footeritems">
+        <div id="footerbanner" class="footerblockmargin">
+            <p class="footerbannertitle"><span class="Y">Y</span>our<span class="F">F</span>orms</p>
+            <p class="bannerdesc">-Yourforms is the insert text here.</p>
         </div>
-        <div id="company" class="inline">
-            <p>Company</p>
+        <div id="company" class="footerblockmargin">
+            <p class="footercategtitle">Company</p>
             <ul>
                 <li><a href="#">Terms and Agreements</a></li>
                 <li><a href="#">About Us</a></li>
             </ul>
         </div>
-        <div id="howtobuy" class="inline">
-            <p>How-to-Buy</p>
+        <div id="howtobuy" class="footerblockmargin">
+            <p class="footercategtitle">How-to-Buy</p>
             <ul>
                 <li><a href="#">Step-by-Step</a></li>
                 <li><a href="#">Methods of Payment</a></li>
             </ul>
         </div>
-        <div id="footercontact" class="inline">
-            <p>Any Questions?</p>
+        <div id="footercontact" class="footerblockmargin">
+            <p class="footercategtitle">Any Questions?</p>
             <ul>
+                <li style="font-size: 6pt;"><a class="inline" href="#"><img src="" alt="facebook"></a><a class="inline" href="#"><img src=" " alt="twitter"></a></li>
                 <li>Email:someemail@email.com</li>
                 <li>000-000-0000</li>
             </ul>
         </div>
+    </div>
     </footer>
 </body>
 </html>
