@@ -11,6 +11,12 @@
         background-repeat: no-repeat;
         background-size: 100% 100%;
     }
+    .inline{
+        display:inline-block;
+        margin-left:1vw;
+        margin-right:1vw;
+    }
+    /* HEADER */
     header{
         display: block;
         background: url(https://www.pixel4k.com/preview.php?src=https://www.pixel4k.com/wp-content/uploads/2018/10/cityscape-skyscraper-pink-lights-buildings-4k_1540751403.jpg&w=2560&h=1440);
@@ -22,30 +28,28 @@
         -moz-box-shadow: 0px 13px 141px 3px rgba(0,0,0,0.44);
         box-shadow: 0px 13px 141px 3px rgba(0,0,0,0.44);
     }
-    #headercontact{
-        margin:auto;
-        text-align: right;
-        color:white;
-        width: 100%;
-        height: 3.5vh;
-        background:rgba(209, 209, 209, 0.4);
-        overflow: hidden;
-    }
     header a{
         color:white;
         text-decoration: none;
     }
+    #headercontact{
+        position: relative;
+        color:white;
+        width: 100%;
+        height: 4vh;
+        background:rgba(209, 209, 209, 0.4);
 
-    .inline{
-        display:inline-block;
-        margin-left:10px;
-        margin-right:10px;
     }
-    .adjustright{
-        margin-right:50px;
-        margin-top:-10px;
-        margin-bottom:-10px;
-    }
+    #headercontact ul{
+        margin: auto;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-right: 1.2vw;
+        margin-top: -1.5vh;
+        list-style-type: none;
+        font-size: 1vw;
+    }   
     .header2{
         margin: auto;
         width: 100%;
@@ -56,40 +60,40 @@
     #banner{
         margin: auto;
         float:left;
-        margin-left:70px; 
+        margin-left:4vw; 
     }
-    #banner p{
+    #banner a{
         margin: auto;
-        font-size: 40pt;
+        font-size: 2.8vw;
         font-family:"Bebas Neue";
         font-weight:bolder;
     }
     .Y{
-        font-size: 52pt;
+        font-size: 3.5vw;
         color:coral;
     }
     .F{
-        font-size: 52pt;
+        font-size: 3.5vw;
         color:darkcyan;
     }
     .header2 nav{
         float:right;
         margin: auto;
-        margin-right: 100px;
-        margin-top: 15px;
+        margin-right: 5vw;
+        margin-top: 2.5vh;
     }
     .header2 nav ul{
         margin: auto;
         text-decoration: none;
-        font-size: 25pt;
+        font-size: 1.8vw;
         list-style-type: none;
         font-family: "Bebas Neue";
     }
     .header2 nav ul li a{
-        padding:10px;
+        padding:0.5vw;
     }
     .header2 nav ul li a:hover{
-        padding:10px;
+        padding:0.5vw;
         animation-name: hover;
         animation-duration: 0.5s;
         animation-fill-mode: forwards;
@@ -100,6 +104,9 @@
             border-radius: 5px;
         }
     }
+
+    /* MAIN */
+
     main{
         display: block;
         margin: auto;
@@ -115,7 +122,7 @@
     form{
         margin:auto;
         font-family: Mulish;
-        font-size: 12pt;
+        font-size: 1rem;
     }
     fieldset{
         display: block;
@@ -125,7 +132,7 @@
         padding:20px;
         text-align: justify;
         border-style: none;
-        width: 25vw;
+        width: 400px;
         height: 100%;
     }
     legend{
@@ -140,24 +147,23 @@
         border-radius: 5px;
         padding:10px
     }
+    /* FOOTER */
+
     footer{
         display: block;
-        bottom: 0;
         margin-top: 50px;
         width: 100%;
-        height: 20vh;
+        height: 23vh;
         background: rebeccapurple;
         overflow: hidden;
     }
     #footeritems{
-        height: 20vh;
         margin:auto;
-        width:80vw;
+        width:100%;
         font-family: "Bebas Neue";
-        font-size: 18pt;
+        font-size: 1.2vw;
         font-weight: bolder;
         color:white;
-        overflow: hidden;
     }
     #footeritems a{
         text-decoration: none;
@@ -168,42 +174,49 @@
     }
     #footeritems ul{  
         list-style-type: none;
-        margin-top: -20px;
     }
-    .footerbannertitle{
+    .footerheadings{
+        width: 80vw;
         margin: auto;
-        font-size: 40pt;
-        font-family:"Bebas Neue";
-        font-weight:bolder;
-        color: white;
+        display:block;
+        background-color: burlywood;
+    }
+    .footerheadings .footerbannertitle,.footercategtitle{
+        display: inline-block;
+        margin: 0 5.5vw 0 5.5vw;
+        font-size: 2vw;
+    }
+    .footercateg{
+        margin: auto;
+        width:80vw;
+        height: 6vw;
+        display: block;
+        background-color: aquamarine;
+        
     }
     .footerblockmargin{
-        display: inline-block;
-        margin:auto;
-        margin-left:50px;
-        margin-right: 50px;
-    }
-    .footercategtitle{
-        font-size: 25pt;
-    }
-    #footercontact p{
-        margin-bottom: 25px;
+        background-color: aqua;
+        display:inline-block;
+        margin: 0 1vw 1vh 1vw;
+        font-size: 1.3vw;
+        vertical-align:top;
+        text-align:left;
     }
 </style>
 </head>    
 <body>
     <header>
         <div id="headercontact">
-            <div class="adjustright">
-                <a class="inline" href="#"><img src=" " alt="facebook"></a>
-                <a class="inline" href="#"><img src=" " alt="twitter"></a>
-                <p class="inline">someemail@email.com</p>
-                <p class="inline">000-000-0000</p>
+            <ul>
+                <li class="inline"><a  href="#"><img src=" " alt="facebook"></a></li>
+                <li class="inline"><a href="#"><img src=" " alt="twitter"></a></li>
+                <li class="inline"><p>someemail@email.com</p></li>
+                <li class="inline"><p>000-000-0000</p></li>
             </div>
         </div>
         <div class="header2">
             <div id="banner">
-                <p id="bannertitle"><span class="Y">Y</span>our<span class="F">F</span>orms</p>
+                <a href="index.html" id="bannertitle"><span class="Y">Y</span>our<span class="F">F</span>orms</a>
             </div>
         <nav>
             <ul>
@@ -276,28 +289,24 @@
     </main>
     <footer>
         <div id="footeritems">
-        <div id="footerbanner" class="footerblockmargin">
+            <div class="footerheadings">
             <p class="footerbannertitle"><span class="Y">Y</span>our<span class="F">F</span>orms</p>
-            <p class="bannerdesc">-Yourforms is the insert text here.</p>
-        </div>
-        <div id="company" class="footerblockmargin">
             <p class="footercategtitle">Company</p>
-            <ul>
+            <p class="footercategtitle">How-to-Buy</p>
+            <p class="footercategtitle">Any Questions?</p>
+        </div>
+        <div class="footercateg">
+            <p class="bannerdesc footerblockmargin">-Yourforms is the insert text here.</p>
+            <ul id="company" class="footerblockmargin">
                 <li><a href="#">Terms and Agreements</a></li>
                 <li><a href="#">About Us</a></li>
             </ul>
-        </div>
-        <div id="howtobuy" class="footerblockmargin">
-            <p class="footercategtitle">How-to-Buy</p>
-            <ul>
+            <ul  id="howtobuy" class="footerblockmargin">
                 <li><a href="#">Step-by-Step</a></li>
                 <li><a href="#">Methods of Payment</a></li>
             </ul>
-        </div>
-        <div id="footercontact" class="footerblockmargin">
-            <p class="footercategtitle">Any Questions?</p>
-            <ul>
-                <li style="font-size: 6pt;"><a class="inline" href="#"><img src="" alt="facebook"></a><a class="inline" href="#"><img src=" " alt="twitter"></a></li>
+            <ul id="footercontact" class="footerblockmargin">
+                <li><a class="inline" href="#"><img src="" alt="facebook"></a><a class="inline" href="#"><img src=" " alt="twitter"></a></li>
                 <li>Email:someemail@email.com</li>
                 <li>000-000-0000</li>
             </ul>
