@@ -1,0 +1,1 @@
+I created this page based off from the structure of my previous project, Applied Accessibility. This time I applied Responsive Web Design Principles. Making elements in the page adjust accordingly to the viewport. 
