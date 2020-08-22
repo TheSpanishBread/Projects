@@ -172,14 +172,10 @@
     #footeritems a:hover{
         text-decoration: underline;
     }
-    #footeritems ul{  
-        list-style-type: none;
-    }
     .footerheadings{
         width: 80vw;
         margin: auto;
         display:block;
-        background-color: burlywood;
     }
     .footerheadings .footerbannertitle,.footercategtitle{
         display: inline-block;
@@ -191,16 +187,31 @@
         width:80vw;
         height: 6vw;
         display: block;
-        background-color: aquamarine;
         
     }
     .footerblockmargin{
-        background-color: aqua;
         display:inline-block;
-        margin: 0 1vw 1vh 1vw;
+        margin: 0 1vw 0 1vw;
         font-size: 1.3vw;
         vertical-align:top;
-        text-align:left;
+        text-align: left;
+    }
+    .footercateg ul{
+        list-style-type: none;
+        padding: 0;
+
+    }
+    .bannerdesc{
+        margin: 0 1vw 0 7vw;
+    }
+    #company{
+        margin: 0 1vw 0 4vw;
+    }
+    #howtobuy{
+        margin: 0 1vw 0 6vw;
+    }
+    #footercontact{
+        margin: 0 1vw 0 9vw;
     }
 </style>
 </head>    
@@ -296,7 +307,7 @@
             <p class="footercategtitle">Any Questions?</p>
         </div>
         <div class="footercateg">
-            <p class="bannerdesc footerblockmargin">-Yourforms is the insert text here.</p>
+            <p class="bannerdesc footerblockmargin">-Yourforms is the insert text <br>here.</p>
             <ul id="company" class="footerblockmargin">
                 <li><a href="#">Terms and Agreements</a></li>
                 <li><a href="#">About Us</a></li>
