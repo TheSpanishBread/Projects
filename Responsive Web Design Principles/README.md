@@ -1,1 +1,1 @@
-I created this page based off from the structure of my previous project, Applied Accessibility. This time I applied Responsive Web Design Principles. Making elements in the page adjust accordingly to the viewport. 
+This page is created to test what I have learned in freecodecamp's Responsive Web Design with respect to the Odin Project's Web Development 101 course. This uses Responsive Web Design principles compatible with resolutions under 400px. The structure is based off from my Applied Accessibility project. 
