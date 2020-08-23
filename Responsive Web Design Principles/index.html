@@ -17,6 +17,10 @@
         margin-left:1vw;
         margin-right:1vw;
     }
+    .mobile{
+        display: none;
+    }
+
     /* HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER */
     header{
         display: block;
@@ -245,6 +249,33 @@
         fieldset{
             width:1vw;
         }
+        .footerheadings{
+            width:100%;
+            text-align: center;
+        }
+        .footercategtitle{
+            font-size: 7vw;
+            display: block;
+        }
+        .footerheadings .footerbannertitle{
+            font-size: 9vw;
+            display: block;
+        }
+        .mobile{
+            display: block;
+            padding:0;
+            list-style-type: none;
+            font-size: 4vw;
+        }
+        .footercateg{
+            display: none;
+        }
+        footer{
+            height: 100%;
+        }
+        footer a:hover{
+            text-decoration: underline;
+        }
     }
 
     /********************************************************/
@@ -336,10 +367,28 @@
     <footer>
         <div id="footeritems">
             <div class="footerheadings">
-            <p class="footerbannertitle"><span class="Y">Y</span>our<span class="F">F</span>orms</p>
+            
+                <p class="footerbannertitle"><span class="Y">Y</span>our<span class="F">F</span>orms</p>
+            <p class="mobile">-Yourforms is the insert text <br>here.</p>
+            
             <p class="footercategtitle">Company</p>
+            <ul class="mobile">
+                <li><a href="#">Terms and Agreements</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
             <p class="footercategtitle">How-to-Buy</p>
+            <ul class="mobile">
+                <li><a href="#">Step-by-Step</a></li>
+                <li><a href="#">Methods of Payment</a></li>
+            </ul>
+            
             <p class="footercategtitle">Any Questions?</p>
+            <ul class="mobile">
+                <li><a class="inline" href="#"><img src="" alt="facebook"></a><a class="inline" href="#"><img src=" " alt="twitter"></a></li>
+                <li>Email:someemail@email.com</li>
+                <li>000-000-0000</li>
+            </ul>
+        
         </div>
         <div class="footercateg">
             <p class="bannerdesc footerblockmargin">-Yourforms is the insert text <br>here.</p>
