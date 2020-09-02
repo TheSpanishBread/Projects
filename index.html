@@ -6,30 +6,38 @@
         <style>
             body{
                 background: url("9ywbca6G.png");
+                background-size:cover;
+                background-repeat: no-repeat;
                 margin: auto;
             }
+            a{
+                text-decoration: unset;
+                color:unset;
+            }
+            /************************/
             header{
-                margin-top: 20px;
+                height: 40vh;
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
+                justify-content: space-evenly;
                 align-items: center;
             }
             header h1{
                 font-family: "Press Start 2P";
                 text-align: center;
                 text-transform: uppercase;
-                padding: 10px;
-                margin: 10px;
             }
             #avatarimg{
                 position: relative;
-                padding: 10px;
-                margin: 10px;
                 animation-name: float;
                 animation-duration: 3s;
                 animation-fill-mode: forwards;
                 animation-iteration-count: infinite;
+            }
+            header img{
+                border-radius: 50%;
+                width:8vw;
+                height: 16vh;
             }
             @keyframes float{
                 0%{
@@ -42,11 +50,47 @@
                     top: 0px;
                 }
             }
-            header img{
-                border-radius: 50%;
-                width:8vw;
-                height: 16vh;
+            /************************/
+            main{
+                margin: auto;
+                width: 80vw;
+                height: 100%;
+                padding:10px;
+                display: flex;
+                justify-content: space-evenly;
             }
+            .option {;
+                position: relative;
+                width:8vw;
+                height:13vh;
+                background-color: white;
+                border-radius: 5px;
+                border: black .15vw solid;
+                font-family: "Press Start 2P";
+                font-size: 0.6vw;
+                text-align: center;
+                line-height: 2.5vh;
+
+            }
+            .option:hover{
+                animation-name: move;
+                animation-duration: 0.5s;
+                animation-fill-mode: forwards;
+            }
+            @keyframes move{
+                0%{
+                    bottom:0;
+                    right:0;
+                }
+                100%{
+                    bottom:5px;
+                    right:5px;
+                    -webkit-box-shadow: 6px 10px 5px 0px rgba(0,0,0,0.52);
+                    -moz-box-shadow: 6px 10px 5px 0px rgba(0,0,0,0.52);
+                    box-shadow: 6px 10px 5px 0px rgba(0,0,0,0.52);
+                }
+            }
+            /************************/
             footer{
                 position: absolute;
                 bottom: 0px;
@@ -64,8 +108,11 @@
         <h1 id="title">Project Portfolio</h1>
     </header>
     <main>
-        <a href="old-index.html">Freecodecamp Responsive Web Design Certification</a>
-    </main>
+            <a href="old-index.html" class="option">
+                <p>Freecodecamp<br>Responsive<br>Web Design<br>Certification</p>
+            </a>
+        
+        </main>
     <footer>
 
     </footer>
