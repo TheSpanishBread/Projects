@@ -1,0 +1,1 @@
+This page is created to test what I have learned in the "CSS Flexbox" lesson of Freecodecamp's Responsive Web Design Certification.
