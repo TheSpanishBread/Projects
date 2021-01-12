@@ -1,65 +1,123 @@
 <html lang="en-US">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>CSS Flexbox Test</title>
         <style>
             body{
                 margin: auto;
             }
+            ul{
+                list-style-type: none;
+            }
+            .fa {
+                padding: 10px;
+                font-size: 25px;
+                width: 30px;
+                text-align: center;
+                text-decoration: none;
+            }
+            .fa-facebook {
+                background: #3B5998;
+                color: white;
+                }
+            .fa-twitter {
+                background: #55ACEE;
+                color: white;
+            }
+            .fa-instagram {
+                background: #125688;
+                color: white;
+            }
             /***HEADER****/
-            header{
+            
 
-            }
-            #contact-header{
-                margin: auto;
-                width: 100%;
-                height:5vh;
-                background: gray;
-                display: flex;
-                justify-content: flex-end;
-                align-items: center;
-            }
-            nav{
-                margin: auto;
-                background-color: hotpink;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 100%;
+
+
+            /***MAIN****/
+            .carousel-1{
+                background: url(83382_shutterstock_402458263.webp);
             }
         </style>
     </head>
     <body>
-        <header>
-            <div id="contact-header">
-                <p>Phone: 0999-0999909</p>
-                <p>someemail@email.com</p>
-            </div>
+        <header>  
             <nav>
-                <a href="#">Home</a>
-                <a href="#">Courses</a>
-                <h1>YourLogo</h1>
-                <a href="#">About Us</a>
-                <a href="#">Contact</a>
+                <h1>Your<br>School</h1>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Admissions</a></li>
+                    <li><a href="#">Academic</a></li>
+                    <li><a href="#">Links</a></li>
+                    <li><a href="#">Campus Life</a></li>
+                </ul>
+                <div class="header-contact">
+                    <h1>
+                        Contact Us
+                    </h1>
+                    <ul>
+                        <li><a href="#" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-twitter"></a></li>
+                        <li><a href="#" class="fa fa-instagram"></a></li>
+                    </ul>
+                </div>
             </nav>
         </header>
         <main>
-            <div id="news">
-
+            <div class="carousel">
+                <div class="carousel-1">
+                    <h1>
+                        Procedure for<br>Online Application
+                    </h1>
+                    <a href="#">Read More</a>
+                </div>
             </div>
-            <div id="mission">
-
+            <div class="testimonies">
+                <div class="student">
+                    <img src="359-3595316_energy-data-collection-for-iphone-ipad-android-college.png">
+                </div>
+                <div class="student-message">
+                    <p><em>Our school is great!</em></p>
+                    <p><em>~ Some random student</em></p>
+                </div>
             </div>
-            <div id="vission">
-
-            </div>
-            <div id="testimonies">
-
+            <div class="news">
+                <figure class="news-1">
+                    <img class="news-1-img" src="#" alt="news1">     
+                    <figcaption>Article 1</figcaption>
+                </figure>
+                <figure class="news-2">
+                    <img class="news-2-img" src="#" alt="news2">     
+                    <figcaption>Article 2</figcaption>
+                </figure>
+                <figure class="news-3">
+                    <img class="news-3-img" src="#" alt="news3">     
+                    <figcaption>Article 3</figcaption>
+                </figure>
             </div>
         </main>
         <footer>
-            <div id=footer-logo>
-
-            </div>
+           <div class="footer-details">
+            <h1>
+               Your<br>School
+           </h1>
+           <p>
+               Your School is the best school ever.
+           </p>
+           <div class="tos">
+               <a href="#">Privacy Policy</a>
+               <a href="#">Acceptable use policy</a>
+           </div>
+        </div>
+        <div class="footer-contact">
+            <h1>Contact Us</h1>
+            <ul>
+                <li><a href="#" class="fa fa-facebook"></a></li>
+                <li><a href="#" class="fa fa-twitter"></a></li>
+                <li><a href="#" class="fa fa-instagram"></a></li>
+            </ul>
+        </div>
+        <p>YourSchool &copy</p>
         </footer>
     </body>
 </html>
