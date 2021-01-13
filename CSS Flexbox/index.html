@@ -2,20 +2,25 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap" rel="stylesheet"> 
         <title>CSS Flexbox Test</title>
         <style>
             body{
-                margin: auto;
+                margin: 0;
             }
             ul{
                 list-style-type: none;
             }
             .fa {
-                padding: 10px;
-                font-size: 25px;
-                width: 30px;
+                padding: 5px;
+                font-size: 20px;
+                width: 20px;
                 text-align: center;
                 text-decoration: none;
+                border-radius: 50%;
             }
             .fa-facebook {
                 background: #3B5998;
@@ -29,21 +34,117 @@
                 background: #125688;
                 color: white;
             }
+            a{
+                text-decoration: none;
+                color: black;
+            }
             /***HEADER****/
-            
-
-
-
+            header{
+                position: fixed;
+                top: 0px;
+                background-color: white;
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: row;
+                overflow: hidden;
+                -webkit-box-shadow: 0px 9px 5px -1px rgba(0,0,0,0.21);
+                -moz-box-shadow: 0px 9px 5px -1px rgba(0,0,0,0.21);
+                box-shadow: 0px 9px 5px -1px rgba(0,0,0,0.21);
+            }
+            .header-title{
+                width: 20%;
+                text-align: center;
+                font-family: 'Graduate', cursive;
+                font-size: 0.68em;
+            }
+            header nav{
+                width: 60%;
+                font-family: 'Karla', sans-serif;                text-transform: uppercase;
+                font-size: 1em;
+                font-weight: bold;
+            }
+            header nav ul{
+                display: flex;
+                justify-content: center;
+                
+            }
+            header nav ul li{
+                padding: 10px;
+                
+                margin:0 15px 0 15px;
+            }
+            .header-contact{
+                width: 20%;
+                text-align: center;
+                font-family: 'Karla', sans-serif;                text-transform: uppercase;
+                font-size: 0.56em;
+            }
+            .header-contact ul{
+                display: flex;
+                justify-content: center;
+                margin-top: -10px;
+            }
+            .header-contact ul li{
+                margin: 0 5px 0 5px;
+                }
             /***MAIN****/
+            main{
+                display: block;
+                margin-top:9vh;
+            }
+            .carousel{
+                display: block;
+                width: 100%;
+                height:auto;
+            }
             .carousel-1{
-                background: url(83382_shutterstock_402458263.webp);
+                width: 100%;
+                height: 95vh;
+                background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(83382_shutterstock_402458263.webp);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .carousel-1 h1{      
+                position: relative;
+                top: 50%;
+                text-align: center;
+                color: white;
+                text-transform: uppercase;
+                font-family: 'Karla', sans-serif;                
+                vertical-align: middle;
+                font-size: 4em;
+            }
+            .read-more{
+                color: white;
+                text-align: center;
+                position: relative;
+                top: 50%;
+                left: 45%;
+                font-size: 2em;
+                padding:10px;
+                text-transform: uppercase;
+                border: white solid 2px;
+                font-family: 'Karla', sans-serif;                
+            }
+            .testimonies{
+                display: flex;
+                width: auto;
+                height: 95vh;
+                background-color: turquoise;
             }
         </style>
     </head>
     <body>
         <header>  
+            <div class="header-title">
+                <a href="#">
+                    <h1>
+                        <span class="Your">Your</span><br><span class="Your">School</span>
+                    </h1>
+                </a>
+            </div>
             <nav>
-                <h1>Your<br>School</h1>
                 <ul>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Admissions</a></li>
@@ -51,17 +152,17 @@
                     <li><a href="#">Links</a></li>
                     <li><a href="#">Campus Life</a></li>
                 </ul>
-                <div class="header-contact">
-                    <h1>
-                        Contact Us
-                    </h1>
-                    <ul>
-                        <li><a href="#" class="fa fa-facebook"></a></li>
-                        <li><a href="#" class="fa fa-twitter"></a></li>
-                        <li><a href="#" class="fa fa-instagram"></a></li>
-                    </ul>
-                </div>
             </nav>
+            <div class="header-contact">
+                <h1>
+                    Contact Us
+                </h1>
+                <ul>
+                    <li><a href="#" class="fa fa-facebook"></a></li>
+                    <li><a href="#" class="fa fa-twitter"></a></li>
+                    <li><a href="#" class="fa fa-instagram"></a></li>
+                </ul>
+            </div>
         </header>
         <main>
             <div class="carousel">
@@ -69,7 +170,7 @@
                     <h1>
                         Procedure for<br>Online Application
                     </h1>
-                    <a href="#">Read More</a>
+                    <a href="#" class="read-more">Read More</a>
                 </div>
             </div>
             <div class="testimonies">
