@@ -38,6 +38,9 @@
                 text-decoration: none;
                 color: black;
             }
+            a:hover{
+                text-decoration: underline;
+            }
             /***HEADER****/
             header{
                 position: fixed;
@@ -46,13 +49,15 @@
                 width: 100%;
                 height: auto;
                 display: flex;
-                flex-direction: row;
-                overflow: hidden;
+                flex-wrap: wrap;
+                overflow: none;
                 -webkit-box-shadow: 0px 9px 5px -1px rgba(0,0,0,0.21);
                 -moz-box-shadow: 0px 9px 5px -1px rgba(0,0,0,0.21);
                 box-shadow: 0px 9px 5px -1px rgba(0,0,0,0.21);
+                z-index: 999;
             }
             .header-title{
+                overflow: none;
                 width: 20%;
                 text-align: center;
                 font-family: 'Graduate', cursive;
@@ -121,17 +126,73 @@
                 position: relative;
                 top: 50%;
                 left: 45%;
-                font-size: 2em;
+                font-size: 1.6em;
                 padding:10px;
                 text-transform: uppercase;
-                border: white solid 2px;
+                border: white solid 4px;
                 font-family: 'Karla', sans-serif;                
             }
             .testimonies{
+                background-color: indianred;
                 display: flex;
+                flex-wrap: wrap;
+                justify-content:space-around;
                 width: auto;
                 height: 95vh;
-                background-color: turquoise;
+                align-items: center;
+            }
+            .student{
+                align-self: flex-end;
+                opacity: 0.4;
+            }
+            .student-message{
+                font-size: 2.5em;
+                position: relative;
+                right:5%;
+                top:10%;
+            }
+            .news-block{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                font-family: 'Karla', sans-serif;                
+                text-align: center;
+                font-size: 2em;
+                text-transform: uppercase;
+            }
+            .news{
+                display: flex;
+                justify-content: space-evenly;
+            }
+            .img-container {
+                width: 75%;
+                height: 75%;
+                -webkit-box-shadow: 0px 0px 49px -16px rgba(0,0,0,0.46);
+                -moz-box-shadow: 0px 0px 49px -16px rgba(0,0,0,0.46);
+                box-shadow: 0px 0px 49px -16px rgba(0,0,0,0.46);
+            }
+            .news img{
+                max-width: 100%;
+                max-height: 100%;
+            }
+            .news figcaption{
+                margin-top: 20px;
+                padding:20px;
+            }
+            /***FOOTER****/
+            footer{
+                display: flex;
+                flex-direction: column;
+                background-color: burlywood;
+                font-family: 'Karla', sans-serif; 
+                flex-wrap: wrap;               
+            }
+            .main-footer{
+                display: flex;
+                justify-content:space-evenly;
+            }
+            .copyright{
+                text-align: center;
             }
         </style>
     </head>
@@ -178,27 +239,31 @@
                     <img src="359-3595316_energy-data-collection-for-iphone-ipad-android-college.png">
                 </div>
                 <div class="student-message">
-                    <p><em>Our school is great!</em></p>
+                    <p><em>Our school is great!</em></p><br><br><br><br>
                     <p><em>~ Some random student</em></p>
                 </div>
             </div>
-            <div class="news">
-                <figure class="news-1">
-                    <img class="news-1-img" src="#" alt="news1">     
+            <div class="news-block">
+                <h1>News</h1>
+                <div class="news">
+                <figure class="img-container news-1">
+                    <img class="news-1-img" src="20201201-covid-19-protocol-fatima-university-md-3.webp" alt="news1">     
                     <figcaption>Article 1</figcaption>
                 </figure>
-                <figure class="news-2">
-                    <img class="news-2-img" src="#" alt="news2">     
+                <figure class="img-container news-2">
+                    <img class="news-2-img" src="DoingDemocracy-LeonardFreed-LUAG-LehighUniversity-main-1_0.jpg" alt="news2">     
                     <figcaption>Article 2</figcaption>
                 </figure>
-                <figure class="news-3">
-                    <img class="news-3-img" src="#" alt="news3">     
+                <figure class="img-container news-3">
+                    <img class="news-3-img" src="uphilippines-oblation-041917.webp" alt="news3">     
                     <figcaption>Article 3</figcaption>
                 </figure>
             </div>
+            </div>
         </main>
         <footer>
-           <div class="footer-details">
+           <div class="main-footer">
+            <div class="footer-details">
             <h1>
                Your<br>School
            </h1>
@@ -218,7 +283,8 @@
                 <li><a href="#" class="fa fa-instagram"></a></li>
             </ul>
         </div>
-        <p>YourSchool &copy</p>
+    </div>
+        <p class="copyright">YourSchool &copy</p>
         </footer>
     </body>
 </html>
