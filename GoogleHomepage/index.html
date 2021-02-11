@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;600&display=swap" rel="stylesheet">
     <title>Google</title>
     <style>
         body{
@@ -17,14 +19,13 @@
         }
 /* %%%%%%%%%%%%HEADER%%%%%%%%%%%%%%%%%%% */
         header{
-            background-color: thistle;
             position: relative;
             top: 0px;
             width: 100%;
             display: flex;
             justify-content: flex-end;
-            align-items: flex-start;
-            font-size: 14px;
+            align-items: center;
+            font-size: 13px;
         }
         header nav{
             margin:0 0.1vw 0 0;
@@ -36,17 +37,28 @@
         header ul li{
             margin:0 0.5vw 0 0.5vw;
         }
+        header ul li img{
+            margin: auto;
+            position: relative;
+            left:23%;
+            width: 40%;
+            position: relative;
+            left: 15px;
+        }
+        .apps{
+            margin: auto;
+        }
         #sign-in{
-            background-color: blue;
+            background-color: rgb(86, 125, 253);
             color: white;
-            padding: 13px 25px 13px 25px;
-            border-radius: 10px;
+            padding: 10px 23px 10px 23px;
+            border-radius: 8px;
+            
         }
         /* %%%%%%%%%%%%MAIN%%%%%%%%%%%%%%%%%%% */
         main{
             margin: auto;
             display: block;
-            background-color: rgb(255, 246, 218);
             height: 76vh;
         }
         #title{
@@ -54,13 +66,48 @@
             text-align: center;
             position: relative;
             top: 18vh;
-            font-size: 5em;
+            font-size: 7em;
+            font-family: 'Raleway', sans-serif;
+        }
+        .G{
+            color:rgb(75, 120, 245);
+        }
+        .o{
+            color:rgb(252, 82, 82);
+        }
+        .o2{
+            color:rgb(255, 255, 108);
+        }
+        .g{
+            color:rgb(75, 120, 245);
+        }
+        .l{
+            color:rgb(62, 218, 0);
+        }
+        .e{
+            color:rgb(252, 82, 82);
         }
         main form{
             margin: auto;
             text-align: center;
             position: relative;
-            top: 23vh;
+            top: 20.5vh;
+        }
+
+        #search{
+            background-image: url(searchicon.png);
+            background-size: 25px 25px;
+            background-position: 2.5% 50%;
+            background-repeat: no-repeat;
+            width: 27%;
+            line-height: 35px;
+            border-radius: 20px;
+            border-style: none;
+            text-indent: 3em;
+            border:0.1px solid rgb(207, 207, 207);
+            font-family:'Raleway';
+            font-weight:550;
+            font-size: 16px;
         }
         main p{
             margin: auto;
@@ -84,13 +131,14 @@
             <ul>
                 <li><a href="#">Gmail</a></li>
                 <li><a href="#">Images</a></li>
-                <li><a href="#"><img src="iconfinder_ic_apps_48px_352018.png"></a></li>
+                <li  class="apps"><a href="#"><img src="iconfinder_ic_apps_48px_352018.png"></a></li>
                 <li id="sign-in"><a href="#">Sign in</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1 id="title">Google</h1>
+        <h1 id="title"><span class="G">G</span><span class="o">o</span><span class="o2">o</span><span class="g">g</span><span class="l">l</span><span class="e">e</span>
+        </h1>
         <form>
             <input type="text" id="search">
             <br>
